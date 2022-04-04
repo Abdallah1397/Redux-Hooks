@@ -1,7 +1,10 @@
 import { createStore } from "redux";
-import CounterReducer from "./reducers/counter";
+import rootReducers from "./reducers/rootReducers";
 
+
+// define an enhancer
+const enhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__;
 // Store object contains Reducer & State 
-const store = createStore(CounterReducer);
+const store = createStore(rootReducers, enhancer());
 
 export default store;

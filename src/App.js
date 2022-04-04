@@ -5,7 +5,7 @@ import Counter from './components/counter-without-redux';
 function App() {
   return (
     <div className="App">
-      <Counter />
+      {/* <Counter /> */}
       <CounterWithReduxHooks />
     </div>
   );
